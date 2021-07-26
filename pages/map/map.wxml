@@ -1,0 +1,11 @@
+<!--pages/map/map.wxml-->
+<view class="topBox">
+<text class="location">当前位置：{{location1}}</text>
+<text class="map" bindtap="getLocation">定位</text>
+</view>
+<view class="box {{isShow?'':'hideBox'}}">
+<text class="location1" decode>{{location}}&nbsp;&nbsp;&nbsp;{{address}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{isDefault=='true'?'默认':''}}</text>
+<text class="name" decode>{{name}}&nbsp;&nbsp;&nbsp;({{sex=='male'?'先生':'女士'}})&nbsp;&nbsp;&nbsp;{{number}}</text>
+</view>
+<view class="WXinput">微信导入</view>
+<view class="addAddr"><navigator url="/pages/addAddress/addAddress">添加地址</navigator></view>

@@ -1,0 +1,34 @@
+<!--pages/addAddress/addAddress.wxml-->
+<form bindsubmit="formSubmit">  
+    <view>
+        <text class="word" decode>联系人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        <input placeholder="请填写收货人姓名"  type="text" required name="name" value='ajing'></input>
+    </view>
+    <view>
+        <text class="word" decode>性别&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        <radio-group required name="sex">
+            <radio color="black" value="male">先生</radio>
+            <radio color="black" value="female">女士</radio>
+        </radio-group>
+    </view>
+    <view>
+        <text class="word" decode>手机号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        <input placeholder="请填写收货手机号码" type="text" required name="number" value='15888888888'></input>
+    </view>
+    <view>
+        <text class="word" decode>收货地址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        <input class="word1" value="{{location}}" required name="location" type="text">{{location}}</input>
+        <image mode="widthFix" bindtap="addAddr"
+        src="http://m.qpic.cn/psc?/V11IbxQ80fsjOa/45NBuzDIW489QBoVep5mcdQfakEpxqu.ff5GEoIViqw3sQt9CRZh9sHiQ4*Cs0aggCheGlzGke7Brdhteyg4U2c7JLzmyyj7ANQFpWt81wo!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4"></image>
+    </view>
+    <view>
+        <text class="word" decode>门牌号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        <input placeholder="例：B座6楼602室" type="text" required name="address" value='sdfgdsfgvsdf'></input>
+    </view>
+    <view>
+    <radio-group name="chooseDefault" required>
+    <radio color="black" value="true" >设为默认地址</radio></radio-group>
+    </view>
+    <button form-type="submit" >保存</button>
+</form>
+<text class="tips">{{tips}}</text>

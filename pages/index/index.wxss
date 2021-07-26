@@ -1,0 +1,159 @@
+/* *index.wxss*
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
+
+page{
+  background-color: #f7f7f7;
+}
+swiper{
+  width: 750rpx;
+  height: calc(750rpx*592/1080);
+}
+.swiperI{
+  width: 750rpx;
+}
+.boxA{
+ position:relative;
+ left:25rpx;
+  width: 700rpx;
+  height: 400rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+  box-shadow: 0 4px 8px 0 rgba(136, 133, 133, 0.2), 0 6px 20px 0 rgba(136, 131, 131, 0.19);
+  text-align: center;
+}
+.boxB{
+  position:absolute;
+  width: 350rpx;
+  height: 300rpx;
+  /* background-color: #000; */
+  text-align: center;
+}
+.boxC{
+  position:absolute;
+  left:350rpx;
+  width: 350rpx;
+  height: 300rpx;
+  /* background-color: #000; */
+  border-left: 5rpx solid #f7f7f7;
+  text-align: center;
+}
+.boxD{
+  position:absolute;
+  top:300rpx;
+  width: 700rpx;
+  height: 100rpx;
+  border-top: 5rpx solid #f7f7f7;
+  /* background-color: #000; */
+}
+.glass,.car{
+  margin-top:50rpx;
+  width: 125rpx;
+}
+.glass1{
+  width: 65rpx;
+  margin-top: 10rpx;
+  margin-left:-500rpx;
+}
+.word1{
+  font-weight: 700;
+  font-size: 30rpx;
+}
+.word2{
+  font-size: 20rpx;
+}
+.wordBox{
+  position:absolute;
+  left:150rpx;
+  top:25rpx;
+}
+.word3{
+  font-size: 30rpx;
+}
+.word4{
+  padding:90rpx;
+  font-size: 20rpx;
+}
+.all{
+  width: 700rpx;
+  height: 250rpx;
+  /* background-color: #000; */
+  position:relative;
+  top:20rpx;
+  left:25rpx;
+  display: flex;
+}
+.A,.B,.C{
+  flex:1;
+  width: 200rpx;
+  height: 250rpx;
+  background-color: #fff;
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+  border-radius: 10rpx;
+}
+.A{
+  background-color: #f0e5df;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  position: relative;
+}
+.B{
+  background-color: #efe9dd;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  position: relative;
+}
+.C{
+  background-color: #e2eaed;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  position: relative;
+}
+.word6{
+  font-size: 30rpx;
+}
+.word5{
+  font-size: 20rpx;
+  color:#afaba7;
+}
+.I_A{
+  width: 100rpx;
+  position: absolute;
+  top:150rpx;
+  left:20rpx;
+}
+.bottom_box{
+  /* display: flex; */
+  position: relative;
+  padding:30rpx;
+  background-color: #fff;
+  position: relative;
+  width: 620rpx;
+  height: 80rpx; 
+  left:35rpx;
+  top:70rpx;
+  border-radius: 5rpx;
+}
+.I_B{
+  width: 75rpx;
+  position: absolute;
+  top:30rpx;
+  left:560rpx;
+}

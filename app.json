@@ -1,0 +1,62 @@
+{
+  "pages":[   
+     "pages/index/index",
+     "pages/addAddress/addAddress",
+    "pages/map/map",
+    "pages/demo/demo",
+    "pages/goods/goods",
+    "pages/logs/logs",
+    "pages/order/order",
+    "pages/orderForm/orderForm",
+    "pages/mine/mine"
+  ],
+  "permission": {
+    "scope.userLocation": {"desc": "你的位置信息将用于小程序位置接口的效果展示"}
+  },
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#f7f7f7",
+    "navigationBarTitleText": "快乐秘籍",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/首页-选中.png",
+        "selectedIconPath": "icon/首页-选中(1).png"
+      },
+      {
+         "pagePath": "pages/order/order",
+        "text": "点单",
+        "iconPath": "icon/打卡.png",
+        "selectedIconPath": "icon/打卡(1).png"
+      },
+      {
+        "pagePath": "pages/goods/goods",
+       "text": "百货",
+       "iconPath": "icon/工作台.png",
+       "selectedIconPath": "icon/工作台(1).png"
+     },
+     {
+      "pagePath": "pages/orderForm/orderForm",
+     "text": "订单",
+     "iconPath": "icon/新建项目(1).png",
+     "selectedIconPath": "icon/新建项目.png"
+   },
+   {
+    "pagePath": "pages/mine/mine",
+   "text": "我的",
+   "iconPath": "icon/我 的(1).png",
+   "selectedIconPath": "icon/我 的.png"
+ }
+    ],
+    "color":"#666666",
+    "selectedColor": "#2c3167",
+    "backgroundColor":"#f7f7f7"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

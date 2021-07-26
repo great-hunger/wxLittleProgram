@@ -1,0 +1,90 @@
+<!-- index.wxml
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+
+<swiper autoplay interval="3000" circular indicator-dots>
+  <swiper-item>
+    <image mode="widthFix" class="swiperI"
+      src="http://m.qpic.cn/psc?/V11IbxQ80fsjOa/45NBuzDIW489QBoVep5mcYXhDv2i5*gymyxrTmAWXl5jsaujhJHbGJM749wa6TF.9lGivxvYZZl.PB2dkVm.fxAnbmcCsVXfwHXjhrDPIao!/b&bo=OARPAgAAAAABF0E!&rf=viewer_4" />
+  </swiper-item>
+  <swiper-item>
+    <image mode="widthFix" class="swiperI"
+      src="http://m.qpic.cn/psc?/V11IbxQ80fsjOa/45NBuzDIW489QBoVep5mcYXhDv2i5*gymyxrTmAWXl6bDbXoOZ7Pauh3*Hwqsv0tPmCyCteefMc4WDtAmKLVQPB.NF2uGWYQNGzWH2Ezlic!/b&bo=OARKAgAAAAABF0Q!&rf=viewer_4" />
+  </swiper-item>
+  <swiper-item>
+    <image mode="widthFix" class="swiperI"
+      src="http://m.qpic.cn/psc?/V11IbxQ80fsjOa/45NBuzDIW489QBoVep5mcQdxV89Ch6AsPtYL.posTwFt8r2GTQRqZa.SEKZr8i7.4Cl5jB.uzooVKvF3aDkSJRt44Hgpwp5xZUgKB15PIqU!/b&bo=OARJAgAAAAABF0c!&rf=viewer_4" />
+  </swiper-item>
+</swiper>
+<view class="boxA">
+  <view class="boxB">
+    <image class="glass" mode="widthFix"
+      src="http://m.qpic.cn/psc?/V11IbxQ80fsjOa/45NBuzDIW489QBoVep5mca3liFtAj18pMm58CsvW*5cQMxPHOJzWPVg3gjb28qLQrY9yH7R3c3cbVSrhkuBDV6iO1mBNlDKJdO0*UytfsRs!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4" />
+    <view><text class="word1">门店自取</text></view>
+    <view><text class="word2">下单免排队</text></view>
+  </view>
+  <navigator url="/pages/map/map">
+    <view class="boxC">
+      <image class="car" mode="widthFix"
+        src="http://m.qpic.cn/psc?/V11IbxQ80fsjOa/45NBuzDIW489QBoVep5mca3liFtAj18pMm58CsvW*5cApzQFWSUwsdl*LWlBtvmZMmRAjdsI9GEOX1cDF5ahrRh.eXhTBlejW23B864qAqE!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4" />
+      <view> <text class="word1">外卖</text></view>
+      <view><text class="word2">无接触配送，送喜到家</text></view>
+    </view>
+  </navigator>
+
+  <view class="boxD">
+    <view>
+      <image class="glass1" mode="widthFix"
+        src="http://m.qpic.cn/psc?/V11IbxQ80fsjOa/45NBuzDIW489QBoVep5mcfsO3yQW2f4Nk5lxQIDM5CH*a*V3fC0dYgsAuuOb2On0aJQr62mn6R9HV00ndVLxiRpLZu*Yd2m0U07lnJpzUic!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4" />
+    </view>
+    <view class="wordBox"><text class="word3">好友拼单</text>
+      <text class="word4">拼单喝茶，分账更方便</text>
+    </view>
+  </view>
+</view>
+<view class="all">
+  <view class="A">
+    <text class="word6">喜茶百货\n</text>
+    <text class="word5">果汁茶全新上市</text>
+    <image class="I_A" mode="widthFix"
+      src="http://m.qpic.cn/psc?/V11IbxQ80fsjOa/45NBuzDIW489QBoVep5mcYxLvGG93g3usJLgrISA7TinREAitVVlZv3usU3aR2SYNxGCiqxQH4JBSg5rj8lxwBppMI99QXCqdMLfm9T3dJE!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4" />
+  </view>
+  <view class="B">
+    <text class="word6">阿喜团餐\n</text>
+    <text class="word5">果汁茶全新上市</text>
+    <image class="I_A" mode="widthFix"
+      src="http://m.qpic.cn/psc?/V11IbxQ80fsjOa/45NBuzDIW489QBoVep5mcYxLvGG93g3usJLgrISA7ThLQZPaEWcP*sdk66CLsPkBqT0vosnQDl957mC18jX4tqKxC7aG711HXJ8wf.dNZoo!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4" />
+  </view>
+  <view class="C">
+    <text class="word6">阿喜有礼\n</text>
+    <text class="word5">果汁茶全新上市</text>
+    <image class="I_A" mode="widthFix"
+      src="http://m.qpic.cn/psc?/V11IbxQ80fsjOa/45NBuzDIW489QBoVep5mcdmHYW0naurGgDKSb8l1Dgi1ZnpFMh324cX7E5APgpP2*FsHEPcEfWUmP.xrZYT3OrrXV1AV37JVse36W5MpS4U!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4" />
+  </view>
+</view>
+<view class="bottom_box">
+  <text class="word3">我的积分O\n</text>
+  <text class="word5">可兑换喜茶券和丰富灵感周边</text>
+  <image mode="widthFix" class="I_B"
+    src="http://m.qpic.cn/psc?/V11IbxQ80fsjOa/45NBuzDIW489QBoVep5mcdmHYW0naurGgDKSb8l1Dgi1ZnpFMh324cX7E5APgpP2*FsHEPcEfWUmP.xrZYT3OrrXV1AV37JVse36W5MpS4U!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4" />
+</view>

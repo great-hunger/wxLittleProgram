@@ -1,0 +1,16 @@
+<!--components/tabs/tabs.wxml-->
+<view class="tabs">
+    <view class="title">
+        <!-- <view class="t1 active">首页</view>
+        <view class="t1">原创</view>
+        <view class="t1">分类</view> -->
+        <view wx:for="{{tabs}}" wx:key="id" class="t1 {{item.isActive?'active':''}}" bindtap="handleT1"
+            data-index="{{index}}">
+            {{item.name}}
+        </view>
+    </view>
+    <view class="content">
+    <!-- slot占位符 父组件调用子组件用 替换slot -->
+        <slot></slot>
+    </view>
+</view>

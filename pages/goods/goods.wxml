@@ -1,0 +1,108 @@
+<!--pages/goods/goods.wxml-->
+<!-- 
+    text == span
+    view == div
+    checkbox==复选框
+    block==占位符
+ -->
+<!-- <text>pages/goods/goods.wxml</text>
+<view>{{person.age}}</view>
+<view data-num="{{num}}">jscgsh</view>
+<view>
+    <checkbox checked="{{isChecked}}"></checkbox>
+</view>
+<view>{{2+1}}</view>
+<view>{{'1'+'1'}}</view>
+<!-- 数组的话index是第几个 -->
+<!-- <view>
+    <view wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+        索引:{{index}} 值：{{item.name}}
+    </view>
+</view>
+<!-- 一个对象循环 index是属性-->
+<!-- <view>
+    <view wx:for="{{person}}" wx:for-item="value" wx:for-index="key" wx:key="age">
+        属性:{{key}} 值{{value}}
+    </view>
+</view> -->
+<!-- 多个对象循环 index是第几个-->
+<!-- <view>
+    <view wx:for="{{persons}}" wx:for-item="item" wx:for-index="index" wx:key="age">
+        索引:{{index}} 值{{item.age}}
+    </view>
+</view> -->
+<!-- block -->
+<!-- <view>
+    <block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="id" class="my_list">
+        索引:{{index}} 值：{{item.name}}
+    </block>
+</view> -->
+<!-- wx:if="{{true/false}}" -->
+<!-- <view>
+    <view wx:if="{{isTrue}}">jsgcacgua</view>
+    <view wx:elif="{{false}}">dhcvasj</view>
+    <view wx:else="{{false}}">sjdkcbjs</view>
+    <view hidden="{{false}}">djkcsndjk</view>
+</view>
+<input type="text" bindinput="handleInput"/>
+<button bindtap="handleTap" data-operation="{{1}}">+</button>
+<button bindtap="handleTap" data-operation="{{-1}}">-</button>
+<view>
+    {{num1}}
+</view>
+<view class="a">hjgvsud</view>
+<text decode>jcgxsx &nbsp; jsdch</text>
+<view><image mode="aspectFit" src="https://cdn.pixabay.com/photo/2019/10/02/21/11/study-4522028_960_720.png" /></view>
+<view><image mode="aspectFill" src="https://cdn.pixabay.com/photo/2019/10/02/21/11/study-4522028_960_720.png" /></view> -->
+<!-- <view><image mode="widthFix" lazy-load src="https://cdn.pixabay.com/photo/2019/10/02/21/11/study-4522028_960_720.png" /></view> -->
+
+<!-- autoplay自动轮播 interval 修改轮播时间  circular衔接轮播  indicator-dots分页器-->
+<!-- indicator-color未选中的颜色  indicator-active-color选中的颜色-->
+<!-- <swiper autoplay interval="1000" circular indicator-dots indicator-color="#0094ff" indicator-active-color="#ff0094">
+<swiper-item><image mode="widthFix" src="https://cdn.pixabay.com/photo/2019/10/02/21/11/study-4522028_960_720.png" /></swiper-item>
+    <swiper-item><image mode="widthFix" src="https://cdn.pixabay.com/photo/2020/03/06/08/19/office-supplies-4906369_960_720.png" /></swiper-item>
+</swiper> 
+<!-- navigator保留页面跳转，跳转页面不能再tabBar中 -->
+<!-- redirect 关闭页面跳转，不能跳转到tabBar中-->
+<!-- switchTab 可跳转到tabBar中 -->
+<!-- reLanuch关闭所有页面，打开应用内某个页面 -->
+<!-- <navigator url="/pages/demo/demo">导航</navigator>
+<navigator open-type="redirect" url="/pages/demo/demo">导航</navigator>
+<navigator open-type="switchTab" url="/pages/index/index">导航</navigator>
+<navigator open-type="reLaunch" url="/pages/index/index">导航</navigator> -->
+
+<!-- size大小——default默认大小 mini小尺寸 -->
+<!-- type控制颜色 default灰 primary绿色 warn红色 -->
+<!-- <button>jhsfyuhdg</button>
+<button size="mini">jhsfyuhdg</button>
+<button type="warn" size="mini" loading>jhsfyuhdg</button> -->
+
+<!-- type图标类型 size color -->
+<!-- <icon size="60" type="success" color="red"></icon> -->
+
+<!-- radio 单选框 radio-group选中触发事件-->
+<!-- <radio-group bindchange="handleradio">
+    <radio value="male">男</radio>
+    <radio value="female">女</radio>
+</radio-group>
+<view>{{gender}}</view> -->
+
+<!-- checkbox -->
+<!-- <view>
+    <checkbox-group bindchange="handlecheckbox">
+        <checkbox wx:for="{{list1}}" wx:key="id" value="{{item.value}}">
+            {{item.name}}
+        </checkbox>
+    </checkbox-group>
+</view> -->
+<!-- 打印出value值 -->
+<!-- <view>
+    {{checkList}}
+</view> -->
+
+<!-- 自定义组件 -->
+<!-- <tabs tabs="{{tabs}}" binditemChange="handleItemChange">
+<block wx:if="{{tabs[0].isActive}}">0</block>
+<block wx:elif="{{tabs[1].isActive}}">1</block>
+<block wx:else>2</block>
+</tabs> -->
